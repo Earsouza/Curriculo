@@ -1,34 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo</title>
+    <meta name="description" content="Currículo de Eduardo Antônio Raimundo de Souza - Desenvolvedor FullStack">
+    <link rel="stylesheet" href="style.css">
+    <title>Currículo - Eduardo Souza</title>
 </head>
+
 <body>
-    <h1>Eduardo Antônio Raimundo de Souza</h1>
-    <h2>Programador FullStack</h2>
-    <br>
-    <p><b>E-mail:</b><a
-            href="mailto:eduardoraimundo17@hotmail.com?subject=Contato&body=Olá, gostaria de mais informações.">eduardoraimundo17@hotmail.com</a>
-    </p>
-<p>(47)99224 0039</p>
-<p>Blumenau, Santa Catarina - BR</p>
-<p>github.com/Earsouza</p>
-<p>linkedin.com/in/eduardo-antoniors/</p>
-<br>
 
-<p>Sou desenvolvedor com experiência na criação e manutenção de sistemas. 
-    Tenho expertise em Java, JavaScript e PL/SQL, tendo participado de projetos de migração
-    de funcionalidades, implementação de novos padrões de design e modernização de interfaces
-    para web e desktop. Busco uma oportunidade para aplicar meus conhecimentos e agregar valor
-    a soluções inovadoras.</p>
+    <!-- Navegação -->
+    <nav class="navegacao">
+        <ul>
+            <li><a href="#educacao">Educação</a></li>
+            <li><a href="#experiencia">Experiências</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+        </ul>
+    </nav>
 
-    <h2>Educação</h2>
-    <h2>Experiências</h2>
-    <h2>Skills</h2>
-    <h2>Projetos</h2>
+    <!-- Seção de Apresentação -->
+    <section id="apresentacao">
+        <header>
+            <h1>Eduardo Souza</h1>
+            <h2>Programador FullStack</h2>
+        </header>
 
+        <!-- Seção de Contato -->
+        <section id="contato">
+            <p>(47) 99224-0039</p>
+            <p><a href="mailto:eduardoraimundo17@hotmail.com">eduardoraimundo17@hotmail.com</a></p>
+            <p>Blumenau, Santa Catarina - BR</p>
+            <div class="social-buttons">
+                <a href="https://github.com/Earsouza" id="gitButton" class="button" target="_blank" aria-label="GitHub"></a>
+                <a href="https://linkedin.com/in/eduardo-antoniors/" id="linkedinButton" class="button" target="_blank" aria-label="LinkedIn"></a>
+            </div>
+        </section>
+    </section>
     
+
+
+    <!-- Sobre mim -->
+    <section id="sobre">
+        <header class="apresentacao-header">
+            <img src="img/eduardo-foto.jpg" alt="Imagem de Apresentação" class="apresentacao-img">
+            <div>
+        </header>
+        <p>Sou desenvolvedor com experiência na criação e manutenção de sistemas. Tenho expertise em Java, JavaScript e PL/SQL, tendo participado de projetos de migração de funcionalidades, implementação de novos padrões de design e modernização de interfaces para web e desktop. Busco uma oportunidade para aplicar meus conhecimentos e agregar valor a soluções inovadoras.</p>
+    </section>
+
+    <!-- Educação -->
+    <section id="educacao">
+        <h2>Educação</h2>
+        <p><strong>Análise e Desenvolvimento de Sistemas</strong></p>
+        <p>IFSC - Instituto Federal de Santa Catarina</p>
+        <p>Tecnólogo | Concluído</p>
+    </section>
+
+    <!-- Experiência Profissional -->
+    <section id="experiencia">
+        <h2>Experiências</h2>
+
+        <h3>Estagiário Desenvolvedor</h3>
+        <p><strong>Philips EMR</strong> | Jul 2021 - Jul 2023</p>
+        <p>Correção de defeitos, implementações de solicitações, criação de relatórios, integração de APIs, manipulação de banco de dados, manutenção em WebService. Coleta e análise de dados.</p>
+
+        <h3>Suporte Técnico Junior</h3>
+        <p><strong>CB Sistemas</strong> | Jul 2023 - Ago 2024</p>
+        <p>Atendimento ao cliente com suporte técnico personalizado, análise e resolução de erros, manipulação de banco de dados, instalação de softwares, configuração de redes e documentação de processos para garantir padronização e continuidade.</p>
+
+        <h3>Estagiário Desenvolvedor</h3>
+        <p><strong>Philips EMR</strong> | Ago 2024 - Atualmente</p>
+        <p>Realizo o atendimento dos clientes, prestando suporte e orientação às empresas e lojas do grupo Bella & Co. Sou responsável pela coleta de requisitos, mapeamento e otimização do fluxo de atendimentos, além de contribuir para o desenvolvimento de novas funcionalidades e a identificação de falhas no sistema ou no fluxo de trabalho dos colaboradores.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <p>Lista de habilidades: Java, JavaScript, PL/SQL, Desenvolvimento Web, APIs, Banco de Dados, etc.</p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <p>Descrição dos projetos desenvolvidos.</p>
+    </section>
+
 </body>
-</html> 
+
+</html>
