@@ -24,23 +24,31 @@ body {
 }
 
 .navegacao ul {
-    list-style-type: none;
-}
+    list-style-type: none;    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */}
 
 .navegacao li {
-    display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px; /* Espaço entre os itens do menu */
+
 }
 
 .navegacao a {
-    color: white;
-    text-decoration: none;
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto */
     font-size: 18px;
-    transition: color 0.3s ease;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    border-radius: 5%;
+    transition: color 0.3s ease, background-color 0.3s ease; 
 }
 
 .navegacao a:hover {
-    color: #06a763; /* Cor de destaque ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+    background-color: #06a763; /* Cor de fundo ao passar o mouse */
 }
 
 /* Seção de Apresentação */
