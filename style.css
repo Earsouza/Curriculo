@@ -1,0 +1,201 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    line-height: 1.6;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navegação */
+.navegacao {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.navegacao ul {
+    list-style-type: none;
+}
+
+.navegacao li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navegacao a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navegacao a:hover {
+    color: #06a763; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seção de Apresentação */
+#apresentacao {
+    background-color: #06a763;
+    display: block;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    text-align:left;
+    border-radius: 10px;
+}
+
+#apresentacao header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+#apresentacao header h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: normal;
+}
+
+/* Seção de Contato */
+#contato {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+#contato p {
+    margin: 5px 0;
+}
+
+#contato a {
+    color: white;
+    text-decoration: none;
+}
+
+#contato .social-buttons {
+    margin-top: 20px;
+}
+
+.apresentacao-header {
+    display: flex;
+    align-items: right; /* Alinha a imagem e o texto verticalmente */
+    justify-content: right; /* Centraliza os itens horizontalmente */
+}
+
+.apresentacao-img {
+    display: block;
+    width: 200px; /* Ajuste o tamanho da imagem */
+    height: 300px; /* Ajuste o tamanho da imagem */
+    border-radius: 10%;
+    object-fit: cover; /* Faz com que a imagem não distorça */
+    padding: 10px;
+}
+.button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 15px; /* Ajuste o padding para garantir que o conteúdo fique centralizado */
+    border-radius: 50%; /* Garantir bordas 100% arredondadas, fazendo o botão redondo */
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 60px; /* Defina uma largura específica */
+    height: 60px; /* Defina uma altura específica */
+    margin: px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block; /* Garante que o botão não fique em uma linha separada */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#gitButton {
+    background-image: url('img/img-github.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#linkedinButton {
+    background-color: #007bff;
+    background-image: url('img/img-linkedin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Seções do currículo */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    text-align: left;
+}
+
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+#sobre{
+    display: flex;
+}
+
+p{
+    max-width: 700px; /* Limita a largura máxima do parágrafo */
+    text-align: justify; /* Ajusta o texto dentro do parágrafo */
+}
+
+/* Estilos de Responsividade */
+@media (max-width: 768px) {
+    .navegacao {
+        padding: 10px 0;
+    }
+
+    .navegacao ul {
+        text-align: center;
+    }
+
+    .navegacao li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    #apresentacao header h1 {
+        font-size: 2rem;
+    }
+
+    #apresentacao header h2 {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        width: 40px;
+        height: 40px;
+        padding: 12px;
+    }
+}
